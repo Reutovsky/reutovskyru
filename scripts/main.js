@@ -4,7 +4,7 @@ window.onload = function() {
       speed: 1,
       maxParticles: 50,
       sizeVariations: 1,
-      minDistance: 100,
+      minDistance: 70,
       connectParticles: true
     });
   };
