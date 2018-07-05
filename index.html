@@ -22,26 +22,52 @@
     
 </head>
 <body>
-<header class="header">
-        <div class="invisible"></div>
 
-        <div class="main-logo" id="main-logo-id">
-            <span class="main-logo-span">Reutovsky</span>
-        </div>
+    <header class="header">
+            <div class="invisible"></div>
+    
+            <div class="main-logo" id="main-logo-id">
+                <span class="main-logo-span">Reutovsky</span>
+            </div>
+    
+            <div class="socials-icons">
+                <a href="https://www.instagram.com/reutovsky/"><i class="fab fa-instagram"></i></a>
+                &nbsp;&nbsp;
+                <a href="http://t-do.ru/reutovsky"><i class="fab fa-telegram-plane"></i></a>
+                &nbsp;&nbsp;
+                <button class="feedback-pencil" id="feedback-pencil"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+    
+            <div class="under-constructed">   
+                <span class="coming-soon-span">coming soon</span>
+                &nbsp;
+                <p class="arrow-down"><i class="fas fa-angle-double-down"></i></p>  
+            </div>
 
-        <div class="socials-icons">
-            <a href="https://www.instagram.com/reutovsky/"><i class="fab fa-instagram"></i></a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="http://t-do.ru/reutovsky"><i class="fab fa-telegram"></i></a>
-        </div>
+<!-- FORM-LAYER + FORM-FEEDBACK //-->
 
-        <div class="under-constructed">   
-            <span class="coming-soon-span">coming soon</span>
-            &nbsp;
-            <p class="arrow-down"><i class="fas fa-angle-double-down"></i></p>  
-        </div>
-        
-</header>  
+            <div class="overlay">
+                <div class="form-place">
+                        <form class="form" id="form" name="form">
+                            <input type="text" class="form-field" name="name" placeholder="Введите Ваше имя" />
+                            <input type="text" class="form-field" name="phone" placeholder="Введите ваш телефон" />
+                            <button class="form-button">Отправить заявку</button>
+                        </form>
+                </div>
+            </div>
+
+            <div class="overlay-thankyou">
+                <div class="thankyou">
+                        <button class="js-close-thankyou" id="js-close-thankyou">Спасибо!</button>
+                </div>
+            </div>
+            
+    </header>
+    
+
+    
+    
+
 
     <div class="lorem" id="lorem">
             <p class="news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum nunc. Sed consectetur lacinia mauris, ac rutrum sapien rutrum et. Sed pharetra interdum placerat. Donec laoreet scelerisque odio, quis interdum magna aliquet eget. Maecenas eu libero accumsan, tincidunt erat tempor, vehicula tellus. Quisque suscipit est id malesuada laoreet. Suspendisse in justo urna. Suspendisse laoreet eros felis, nec efficitur mauris ultrices vitae. Duis ut velit libero.
@@ -57,7 +83,8 @@
             </p>
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
