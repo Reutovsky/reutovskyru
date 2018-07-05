@@ -26,69 +26,108 @@ a:active {
     color: hsl(243, 100%, 59.9%);
 }
 
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
+.header {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    perspective: 1000px;
 }
 
 .main-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: hsl(243, 100%, 59.9%);
-    width: 600px;
-    height: 180px;
-    color: white;
+    background: linear-gradient(to right, hsl(243, 100%, 59.9%), hsl(10, 100%, 59.9%));
+    width: 400px;
+    height: 120px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    font-size: 100px;
+    font-size: 65px;
     font-family: "Futura", Arial, serif;
     font-weight: bold;
     font-style: italic;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 1);
+}
+
+.main-logo-span {
+    color: white;
 }
 
 
 .socials-icons {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
     color: hsl(243, 100%, 59.9%);
     font-size: 50px;
     z-index: 10;
 }
 
-.coming-soon {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    font-size: 30px;
+.fab:hover {
+    color:  hsl(10, 100%, 59.9%);
+}
+.fab:active {
+    color:  hsl(10, 100%, 59.9%);
+}
+.under-constructed {
+    font-size: 16px;
     z-index: 5;
     font-family: "Futura", Arial, serif;
     font-weight: bold;
     font-style: italic;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 65px;
 }
+
+.coming-soon-span {
+    color: hsl(243, 100%, 59.9%);
+}
+
+.arrow-down {
+    font-size: 20px;
+    padding: 10px 0;
+    margin:0;
+    animation-name: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: hsl(243, 100%, 59.9%);
+}
+
+@keyframes blinking {
+    0% {
+    }
+    50% {
+        color:  hsl(10, 100%, 59.9%);
+        transform: scale(1.3);
+    }  
+  }
 
 @media (max-width: 576px) {
     .main-logo {
-        width: 350px;
-        height: 120px;
-        font-size: 60px;
+        width: 300px;
+        height: 90px;
+        font-size: 40px;
     }
 
     .socials-icons {
         font-size: 30px;
     }
 
-    .coming-soon {
-        font-size: 20px;
+    .under-constructed {
+        font-size: 12px;
     }
+
+    .arrow-down {
+        font-size: 16px;
+    }
+}
+
+.news {
+    font-size: 18px;
+    padding: 40px 15px;
 }

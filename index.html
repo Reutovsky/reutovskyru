@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Reutovsky</title>
+    
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121814825-1"></script>
@@ -17,22 +19,45 @@
     
     gtag('config', 'UA-121814825-1');
     </script>
-
+    
 </head>
 <body>
+<header class="header">
+        <div class="invisible"></div>
 
-    <div class="main-logo">Reutovsky</div>
-    <div class="socials-icons">
-        <a href="https://www.instagram.com/reutovsky/"><i class="fab fa-instagram"></i></a>
-        &nbsp;
-        <a href="http://t-do.ru/reutovsky"><i class="fab fa-telegram"></i></a>
+        <div class="main-logo" id="main-logo-id">
+            <span class="main-logo-span">Reutovsky</span>
+        </div>
+
+        <div class="socials-icons">
+            <a href="https://www.instagram.com/reutovsky/"><i class="fab fa-instagram"></i></a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="http://t-do.ru/reutovsky"><i class="fab fa-telegram"></i></a>
+        </div>
+
+        <div class="under-constructed">   
+            <span class="coming-soon-span">coming soon</span>
+            &nbsp;
+            <p class="arrow-down"><i class="fas fa-angle-double-down"></i></p>  
+        </div>
+        
+</header>  
+
+    <div class="lorem" id="lorem">
+            <p class="news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum nunc. Sed consectetur lacinia mauris, ac rutrum sapien rutrum et. Sed pharetra interdum placerat. Donec laoreet scelerisque odio, quis interdum magna aliquet eget. Maecenas eu libero accumsan, tincidunt erat tempor, vehicula tellus. Quisque suscipit est id malesuada laoreet. Suspendisse in justo urna. Suspendisse laoreet eros felis, nec efficitur mauris ultrices vitae. Duis ut velit libero.
+            Donec et lacus enim. Fusce pellentesque porttitor eros, id feugiat leo condimentum in. Vivamus sit amet dictum nunc. Vestibulum bibendum enim in justo lobortis tincidunt. Quisque nec posuere sapien. Fusce suscipit vestibulum nisl, a vestibulum urna tincidunt eu. Donec ut fermentum eros, vel laoreet orci. Nam tristique sit amet tortor porta maximus.
+            </p>
+            <p class="news">
+                Sed dolor justo, blandit in ex egestas, facilisis sagittis metus. Nulla tincidunt, ante in bibendum gravida, ligula lacus feugiat nulla, non dictum dolor lorem et urna. Fusce iaculis interdum sem a porta. Nam ac mauris non orci venenatis bibendum vel sed risus. Curabitur a turpis varius, dignissim ligula quis, sollicitudin diam. Cras at neque quis leo congue efficitur. Praesent sit amet malesuada leo, id aliquam purus. Suspendisse in tempor eros. Maecenas sed lobortis leo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum nunc. Sed consectetur lacinia mauris, ac rutrum sapien rutrum et. Sed pharetra interdum placerat. Donec laoreet scelerisque odio, quis interdum magna aliquet eget. Maecenas eu libero accumsan, tincidunt erat tempor, vehicula tellus. Quisque suscipit est id malesuada laoreet. Suspendisse in justo urna. Suspendisse laoreet eros felis, nec efficitur mauris ultrices vitae. Duis ut velit libero.
+            </p>
+            <p class="news">
+                Donec et lacus enim. Fusce pellentesque porttitor eros, id feugiat leo condimentum in. Vivamus sit amet dictum nunc. Vestibulum bibendum enim in justo lobortis tincidunt. Quisque nec posuere sapien. Fusce suscipit vestibulum nisl, a vestibulum urna tincidunt eu. Donec ut fermentum eros, vel laoreet orci. Nam tristique sit amet tortor porta maximus.
+                Sed dolor justo, blandit in ex egestas, facilisis sagittis metus. Nulla tincidunt, ante in bibendum gravida, ligula lacus feugiat nulla, non dictum dolor lorem et urna. Fusce iaculis interdum sem a porta. Nam ac mauris non orci venenatis bibendum vel sed risus. Curabitur a turpis varius, dignissim ligula quis, sollicitudin diam. Cras at neque quis leo congue efficitur. Praesent sit amet malesuada leo, id aliquam purus. Suspendisse in tempor eros. Maecenas sed lobortis leo.
+            </p>
     </div>
-    <div class="coming-soon">coming soon</div>
-
-    <!-- PARTICLES init -->
-
-    <canvas class="background"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
