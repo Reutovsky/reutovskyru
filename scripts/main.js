@@ -18,8 +18,8 @@ $(document).ready(function() {
             url: "mail.php",
             data: $(this).serialize()
         }).done(function(){
+            $('.overlay-thankyou').fadeIn(1);
             $('.overlay').fadeOut();
-            $('.overlay-thankyou').fadeIn();
             $(this).find('input').val('');
             $('#form').trigger('reset');
         });

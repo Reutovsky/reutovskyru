@@ -67,6 +67,7 @@ a:active {
     display: inline;
     border: 0;
     color: hsl(243, 100%, 59.9%);
+    font-size: 50px; 
 }
 
 .feedback-pencil:hover {
@@ -117,7 +118,7 @@ a:active {
     }  
   }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .main-logo {
         width: 300px;
         height: 90px;
@@ -134,6 +135,10 @@ a:active {
 
     .arrow-down {
         font-size: 16px;
+    }
+
+    .feedback-pencil {
+        font-size: 30px;
     }
 }
 
@@ -166,7 +171,7 @@ a:active {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 100; 
+    z-index: 200; 
     display: none;  
 }
 
